@@ -19,21 +19,5 @@ def tinh_tien_nuoc(so_nuoc):
     else:
         tien_nuoc_thang = 20 * gia_ban_nuoc[0] + 10 * gia_ban_nuoc[1] + 10 * gia_ban_nuoc[2] + (so_nuoc - 40) * gia_ban_nuoc[3]     
         return tien_nuoc_thang
-    menu = {
-        "1" : "tinh tien nuoc",
-        "2" : "tinh nguyen lieu",
-        "3" : "thoat"
-    }
-    while True:
-        print (================ MENU ========)
-        for k,v in menu.items():
-            print (k,":",v)
-        lua_chon = input("Nhap lua chon cua ban: ")
-        if lua_chon == "3":
-            print("Cam on ban da su dung chuong trinh!")
-            break
-        elif lua_chon == "1":
-            so_nuoc = float(input("so nuoc: "))
-             print("tien nuoc thang la:", tinh_tien_nuoc(so_nuoc))
-            print("Lua chon khong hop le, vui long chon lai!")
+
     
